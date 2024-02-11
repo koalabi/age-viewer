@@ -92,6 +92,7 @@ const CypherResultCytoscapeFooter = ({
           </div>
           <button
             type="button"
+            aria-label="aria1"
             className="frame-head-button btn btn-link px-3"
             onClick={() => setFooterExpanded(!footerExpanded)}
           >
@@ -168,6 +169,7 @@ const CypherResultCytoscapeFooter = ({
               sizeChange(footerData.data.type, footerData.data.label, nodeSize)]}
             key={uuid()}
             type="button"
+            aria-label="aria1"
             className={`btn sizeSelector node ${footerData.data.size >= nodeSize ? ' selectedSize ' : ''}`}
             style={{ width: `${size}px`, height: `${size}px` }}
           >
@@ -184,6 +186,7 @@ const CypherResultCytoscapeFooter = ({
               sizeChange(footerData.data.type, footerData.data.label, edgeSize)]}
             key={uuid()}
             type="button"
+            aria-label="aria2"
             className={`btn sizeSelector edge ${footerData.data.size >= edgeSize ? ' selectedSize ' : ''}`}
             style={{ width: `${size + 18}px`, height: `${size}px` }}
           >
@@ -210,6 +213,7 @@ const CypherResultCytoscapeFooter = ({
                 colorChange(footerData.data.type, footerData.data.label, color)]}
               key={uuid()}
               type="button"
+              aria-label="aria3"
               className={`btn colorSelector ${footerData.data.backgroundColor === color.color ? ' selectedColor ' : ''}`}
               style={{ backgroundColor: color.color }}
             >
@@ -225,6 +229,7 @@ const CypherResultCytoscapeFooter = ({
                 colorChange(footerData.data.type, footerData.data.label, color)]}
               key={uuid()}
               type="button"
+              aria-label="aria4"
               className={`btn colorSelector ${footerData.data.backgroundColor === color.color ? ' selectedColor ' : ''}`}
               style={{ backgroundColor: color.color }}
             >
@@ -291,6 +296,7 @@ const CypherResultCytoscapeFooter = ({
           </div>
           <button
             type="button"
+            aria-label="aria5"
             className="frame-head-button btn btn-link px-3"
             onClick={() => setFooterExpanded(!footerExpanded)}
           >
